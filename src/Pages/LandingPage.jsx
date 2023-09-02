@@ -35,32 +35,34 @@ function UsersList() {
     navigate("/profile");
   };
   return (
-    <div className="center-container">
-      <Card sx={{ width: 600, height: 500, borderRadius: 8 }}>
-        <Box className="card-header">
-          <Typography variant="h6" className="header-title">
-            Select an account
-          </Typography>
-        </Box>
-        <CardContent>
-          <div className="user-list-container">
-            {usersList?.length > 0 &&
-              usersList.map((user) => {
-                return (
-                  <div key={user?.id}>
-                    <Typography
-                      variant="h6"
-                      className="user-name"
-                      onClick={() => handleUserClick(user)}
-                    >
-                      {user?.name}
-                    </Typography>
-                  </div>
-                );
-              })}
-          </div>
-        </CardContent>
-      </Card>
+    <div className="section">
+      <div className="center-container curve ">
+        <Card sx={{ width: 600, height: 500, borderRadius: 8 }}>
+          <Box className="card-header">
+            <Typography variant="h6" className="header-title">
+              Select an account
+            </Typography>
+          </Box>
+          <CardContent>
+            <div className="user-list-container">
+              {usersList?.length > 0 &&
+                usersList.map((user) => {
+                  return (
+                    <div key={user?.id}>
+                      <Typography
+                        variant="h6"
+                        className="user-name"
+                        onClick={() => handleUserClick(user)}
+                      >
+                        {user?.name}
+                      </Typography>
+                    </div>
+                  );
+                })}
+            </div>
+          </CardContent>
+        </Card>
+      </div>
     </div>
   );
 }
