@@ -169,3 +169,191 @@ input:focus {
   background-color: #007bff;
   color: white;
 }
+.user-name {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px; /* Add some space after the line */
+  margin-bottom: 8px; /* Add some space between user entries */
+  padding: 8px;
+  font-family: sans-serif;
+}
+.user-profile {
+  border-bottom: 1px solid #CCCCCC;
+  padding-bottom: 8px; /* Add some space after the line */ /* Add some space between user entries */
+  padding: 8px;
+  font-family: sans-serif;
+}
+.user-profile1 {
+  border-right: 1px solid #0e0e0e;
+  padding: 10px;
+}
+.card-header {
+  background-color: #eceff1e6 !important;
+  padding: 16px 16px 8px !important;
+  /* color: rgb(48, 45, 45) !important; */
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  width: inherit ; /* Set the width to inherit from the card */
+  display: flex; /* Use Flexbox for centering */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  height: 80px;
+}
+.header-title {
+  margin: 0 !important;
+  font-family: sans-serif !important; /* Reset margin for Typography */
+  font-weight: 600 !important;
+  color: rgb(73, 73, 73);
+}
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+
+.user-list-container {
+   max-height: 400px;
+  overflow-y: auto; 
+  padding-right: 14px
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cac9c9;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* src/components/ChatList.css */
+.chat-list-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.chat-item {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.address-info{
+  padding-left: 20px;
+}
+/* src/components/ComingSoon.css (or ComingSoon.scss if using SCSS) */
+.coming-soon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 100vh; /* 100% of the viewport height */
+  text-align: center;
+}
+
+/* Additional styling for the text */
+/* h1 {
+  font-size: 36px;
+  color: #333;
+} */
+h1 {
+  font-size: 5rem !important;
+  color: #EEEEEE !important;
+}
+/* . {
+  height: 100vh;
+  width: 100vw;
+} */
+
+.map-container {
+  height: 50%;
+  width: 120%;
+}
+/* src/components/ChatList.css */
+.chat-list {
+  width: 300px;
+  border-right: 1px solid #ccc;
+  padding: 16px;
+  overflow-y: scroll;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.chat-item:hover {
+  background-color: #f2f2f2;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.chat-details {
+  flex: 1;
+}
+
+h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.last-message {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* src/components/ChatList.css */
+.chat-list-container {
+  position: fixed;
+  bottom: 16px;
+  right: 200px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+.toggle-button {
+   background-color: #fff;  
+  /* color: white; */
+}
+
+.chat-list {
+  display: none;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  transition: height 0.3s;
+}
+
+.open {
+  display: block;
+  height: 300px;
+}
+
+.closed {
+  height: 0;
+}
